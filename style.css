@@ -1,0 +1,167 @@
+:root {
+    --primary: #ff6500;   
+    --secondary: #1900ff; 
+    --dark: #2f00ff;      
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    background-image: url('https://wp.com');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #222222;
+}
+
+.main-header {
+    background: var(--secondary);
+    padding: 20px 0;       
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    font-size: 32px;        
+    font-weight: 800;
+    letter-spacing: -1px;  
+}
+
+.logo span {
+    color: var(--primary);  
+}
+
+.kb-container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+    padding: 40px 20px;
+}
+
+.kb-contact-card {
+    background: rgba(255, 255, 255, 0.97); 
+    width: 100%;
+    max-width: 850px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+}
+
+.kb-header-card h2 {
+    color: var(--secondary);
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.kb-header-card p {
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--secondary);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.ph-input {
+    width: 60px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.ph-input:focus {
+    border-color: var(--primary);
+    outline: none;
+    background-color: #fffaf7;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+}
+.acido { background-color: #ffe5e5; color: #cc0000; }
+.leve-acido { background-color: #fff2cc; color: #b38600; }
+.neutro { background-color: #e2f0d9; color: #385723; }
+.alcalino { background-color: #e6f2ff; color: #0044cc; }
+
+.kb-footer-card {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.kb-footer-card p {
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.kb-footer-card a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.kb-footer-card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .kb-contact-card {
+        padding: 15px;
+    }
+    th, td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
