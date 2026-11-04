@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Experimentos - Equipe 1</title>
-    <!-- Vinculando o arquivo CSS externo que está dentro da pasta css -->
+    <!-- Vinculando o arquivo CSS externo -->
     <link rel="stylesheet" href="galeria.css">
+    <style>
+        /* Ajuste para garantir que as imagens fiquem visíveis por padrão */
+        .area-foto img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body class="kb-body-dark">
 
@@ -13,7 +21,6 @@
     <header class="main-header">
         <div class="logo">O PH DAS BEBIDAS NO COTIDIANO DOS PROFISSIONAIS DE <span> TECNOLOGIA</span></div>
     </header>
-
 
     <!-- Container Central -->
     <div class="kb-container-center">
@@ -26,16 +33,12 @@
 
             <!-- Grade de fotos (Grid) -->
             <div class="kb-grid-galeria">
-                
+
                 <!-- CARD 1 -->
                 <div class="card-experimento">
                     <h3>1. Suco de Limão</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/limao.jpg" alt="Experimento Suco de Limão">
                     </div>
                     <span class="badge acido">Ácido</span>
                 </div>
@@ -44,11 +47,7 @@
                 <div class="card-experimento">
                     <h3>2. Vinagre</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/vinagre.jpg" alt="Experimento Vinagre">
                     </div>
                     <span class="badge acido">Ácido</span>
                 </div>
@@ -57,11 +56,7 @@
                 <div class="card-experimento">
                     <h3>3. Refrigerante</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/refrigerante.jpg" alt="Experimento Refrigerante">
                     </div>
                     <span class="badge acido">Ácido</span>
                 </div>
@@ -70,11 +65,7 @@
                 <div class="card-experimento">
                     <h3>4. Acidificante Capilar</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="maybe_toggle_class(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/acidificante.jpg" alt="Experimento Acidificante Capilar">
                     </div>
                     <span class="badge acido">Ácido</span>
                 </div>
@@ -83,11 +74,7 @@
                 <div class="card-experimento">
                     <h3>5. Café Preto</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/cafe.jpg" alt="Experimento Café Preto">
                     </div>
                     <span class="badge acido">Ácido</span>
                 </div>
@@ -96,23 +83,16 @@
                 <div class="card-experimento">
                     <h3>6. Leite</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/leite.jpg" alt="Experimento Leite">
                     </div>
                     <span class="badge text-dark leve-acido">Levemente Ácido</span>
                 </div>
+
                 <!-- CARD 7 -->
                 <div class="card-experimento">
                     <h3>7. Água (Mineral/Torneira)</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/agua.jpg" alt="Experimento Água">
                     </div>
                     <span class="badge neutro">Neutro</span>
                 </div>
@@ -121,11 +101,7 @@
                 <div class="card-experimento">
                     <h3>8. Saliva Humana</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/saliva.jpg" alt="Experimento Saliva Humana">
                     </div>
                     <span class="badge alcalino">Alcalino Básico</span>
                 </div>
@@ -134,11 +110,7 @@
                 <div class="card-experimento">
                     <h3>9. Pasta de Dente</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/pasta_dente.jpg" alt="Experimento Pasta de Dente">
                     </div>
                     <span class="badge alcalino">Alcalino Básico</span>
                 </div>
@@ -147,11 +119,7 @@
                 <div class="card-experimento">
                     <h3>10. Água com Bicarbonato</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/bicarbonato.jpg" alt="Experimento Água com Bicarbonato">
                     </div>
                     <span class="badge alcalino">Alcalino Básico</span>
                 </div>
@@ -160,11 +128,7 @@
                 <div class="card-experimento">
                     <h3>11. Água Sanitária</h3>
                     <div class="area-foto">
-                        <label class="label-upload">
-                            📸 Clique para subir a foto
-                            <input type="file" accept="image/*" onchange="mostrarFoto(this)">
-                        </label>
-                        <img src="" alt="Experimento">
+                        <img src="caminho/para/agua_sanitaria.jpg" alt="Experimento Água Sanitária">
                     </div>
                     <span class="badge alcalino">Alcalino Básico</span>
                 </div>
@@ -173,31 +137,11 @@
 
             <!-- Rodapé de navegação integrado -->
             <div class="kb-footer-card">
-                <p>💡 Dica: Você pode alterar as imagens a qualquer momento clicando em cima delas.</p>
                 <a href="index.html">← VER TABELA DE RESULTADOS</a>
             </div>
 
         </div>
     </div>
 
-    <!-- Script de Processamento de Imagem -->
-    <script>
-        function mostrarFoto(input) {
-            const areaFoto = input.closest('.area-foto');
-            const label = areaFoto.querySelector('.label-upload');
-            const img = areaFoto.querySelector('img');
-            const arquivos = input.files;
-
-            if (arquivos && arquivos[0]) {
-                const leitor = new FileReader();
-                leitor.onload = function(e) {
-                    img.src = e.target.result;
-                    img.style.display = 'block';
-                    label.style.display = 'none';
-                }
-                leitor.readAsDataURL(arquivos[0]);
-            }
-        }
-    </script>
 </body>
 </html>
